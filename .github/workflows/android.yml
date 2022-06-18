@@ -28,7 +28,7 @@ jobs:
         distribution: 'temurin'
         cache: 'gradle'
     - name: Build with Gradle
-      run: cd android && ./gradlew build --no-daemon
+      run: chown +x ./gradlew && cd android && ./gradlew build --no-daemon
   
     
     - name: Show build
