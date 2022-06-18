@@ -32,4 +32,4 @@ jobs:
   
     
     - name: Show build
-      run: ls android/app/ && ls android/app/build
+      run: ls android/app/build/outputs
