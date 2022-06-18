@@ -7,7 +7,7 @@ import {
 } from "@ionic/react";
 import ExploreContainer from "../components/ExploreContainer";
 import "./Tab2.css";
-import { camera, trash, close } from "ionicons/icons";
+import { camera } from "ionicons/icons";
 import {
   IonFab,
   IonFabButton,
@@ -16,10 +16,8 @@ import {
   IonRow,
   IonCol,
   IonImg,
-  IonActionSheet,
 } from "@ionic/react";
-import { usePhotoGallery, UserPhoto } from "../hooks/usePhotoGallery";
-import { useState } from "react";
+import { usePhotoGallery } from "../hooks/usePhotoGallery";
 
 const Tab2: React.FC = () => {
   const { photos, takePhoto } = usePhotoGallery();
